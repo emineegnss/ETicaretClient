@@ -28,10 +28,12 @@ export class AppComponent implements OnInit {
 
   }
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
   }
  
 }
 // $(document).ready(()=>{
 //   alert("asd")
 // })
+$.get("https://localhost:7000/api/Products",data =>{
+  console.log(data)
+})
